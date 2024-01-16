@@ -1,0 +1,104 @@
+/* FILEPATH: /home/rafael/Projects/Sparky/src/app/markdown.css */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Add your custom styles here */
+
+/* Example markdown styles */
+/* .markdown {
+  @apply prose prose-sm;
+} */
+
+.markdown h1 {
+  @apply text-4xl font-bold mb-4;
+}
+
+.markdown h2 {
+  @apply text-3xl font-bold mb-3;
+}
+
+.markdown h3 {
+  @apply text-2xl font-bold mb-2;
+}
+
+.markdown h4 {
+  @apply text-xl font-bold mb-2;
+}
+
+.markdown h5 {
+  @apply text-lg font-bold mb-2;
+}
+
+.markdown h6 {
+  @apply text-base font-bold mb-2;
+}
+
+.markdown p {
+  @apply text-lg leading-relaxed mb-4;
+}
+
+.markdown ul {
+  @apply list-disc pl-6 mb-4;
+}
+
+.markdown ol {
+  @apply list-decimal pl-6 mb-4;
+}
+
+.markdown li {
+  @apply mb-2;
+}
+
+.markdown a {
+  @apply text-blue-500 hover:underline;
+}
+
+.markdown blockquote {
+  @apply border-l-4 border-gray-300 italic my-8 pl-4;
+}
+
+.markdown p code {
+  @apply bg-gray-900 rounded px-5 py-2;
+}
+
+.markdown pre {
+  @apply bg-gray-900 rounded p-5;
+}
+
+.markdown pre code {
+  @apply bg-transparent rounded-none;
+}
+
+.markdown table {
+  @apply w-full border-collapse border border-gray-300 mb-4;
+}
+
+.markdown table th {
+  @apply bg-gray-200 border border-gray-300 px-4 py-2;
+}
+
+.markdown table td {
+  @apply border border-gray-300 px-4 py-2;
+}
+
+.markdown table tr:nth-child(even) {
+  @apply bg-gray-100;
+}
+
+.markdown table tr:nth-child(odd) {
+  @apply bg-white;
+}
+
+.markdown img {
+  @apply mx-auto my-8;
+}
+
+.markdown hr {
+  @apply border-gray-300 my-8;
+}
+
+.markdown p {
+  @apply mb-4;
+}
