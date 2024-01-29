@@ -15,7 +15,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
   return (
     <>
       {post && (
-        <div className="m-10">
+        <div className="mx-6">
           <Post title={post.data.title}>{postContent}</Post>
         </div>
       )}

@@ -5,7 +5,7 @@ export default function Posts() {
   const allPostsData = getSortedPostsData();
 
   return (
-    <div className="m-10">
+    <div className="m-6">
       {allPostsData.map((post) => (
         <div key={post.id} className="mb-10">
           <Link href={`/blog/posts/${post.id}`}>

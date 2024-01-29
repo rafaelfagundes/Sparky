@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const MENU_ITEMS = [
@@ -7,12 +8,12 @@ const MENU_ITEMS = [
     href: "/",
   },
   {
-    label: "About",
-    href: "/about",
+    label: "All Posts",
+    href: "/blog/posts",
   },
   {
-    label: "Contact",
-    href: "/contact",
+    label: "About",
+    href: "/about",
   },
 ];
 
@@ -54,7 +55,9 @@ export default Navbar;
 
 function Logo() {
   return (
-    <img src="/img/light-logo.svg" alt="Logo" className="navbar-logo h-10" />
+    <Link href="/">
+      <img src="/img/light-logo.svg" alt="Logo" className="navbar-logo h-10" />
+    </Link>
   );
 }
 
